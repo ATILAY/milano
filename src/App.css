@@ -1,10 +1,10 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --borderBlue: #5f75a2;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -28,11 +28,207 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* burdan table */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 94%;
+  overflow-x:auto;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: 2px solid var(--borderBlue);
+  margin-top: 10px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: var(--borderBlue);
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color:   lightsteelblue;
+}
+/* bura */
+
+
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.max-width-300 {
+  max-width: 300px;
+}
+
+.max-width-600 {
+  max-width: 600px;
+}
+
+.max-width-900 {
+  max-width: 900px;
+}
+
+.max-width-1200 {
+  max-width: 1200px;
+}
+
+.max-height-300 {
+  max-height: 300px;
+}
+.width-100per {
+  width: 100%;
+}
+.height-general {
+  height: 30px;
+}
+.border {
+  border: 1px solid var(--borderBlue);
+  border-radius: 10px;
+}
+
+/* .max-width-80per {
+  max-width: 80%;
+} */
+
+.padding-x-20per {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.transparant-color {
+  color: transparent !important;
+}
+
+.form-wrapper {
+  border-top: 2px black;
+  border-bottom: 2px black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.form-element-margin {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.form-margin-x {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.app-wrapper {
+  border: 2px solid var(--borderBlue);
+}
+
+hr {
+  /* border: 3px solid black; */
+  height: 2px;
+  background-color: var(--borderBlue);
+  width: 100%;
+}
+
+.pagination ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+.pagination li {
+  margin: 10px 4px;
+  border: 2px solid var(--borderBlue);
+  /* padding: 10px; */
+  color: var(--borderBlue);
+  /* padding-top: 10px;
+  padding-bottom: 10px; */
+  padding: 10px;
+  min-width: 20px;
+  text-align: center;
+}
+.pagination li:hover {
+  background-color: var(--borderBlue);
+  color: white;
+  cursor: pointer;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+.big-comp-margin-x {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.app-title {
+  color: var(--borderBlue);
+}
+
+form label {
+  color: var(--borderBlue);
+  font-weight: bold;
+  /* font-size: 12px; */
+}
+
+form .btn-submit:not([disabled]) {
+  border: 2px solid var(--borderBlue);
+  color: var(--borderBlue);
+  background-color: white;
+  font-weight: bolder;
+}
+
+form .btn-submit:not([disabled]):hover{
+  cursor: pointer;
+  background-color: var(--borderBlue);
+  color: white;
+}
+
+form .wrapper-margin-x {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.instructions {
+  width: 100%;
+  font-style: italic;
+  text-align: center;
+  color: var(--borderBlue)
+}
+
+.prev-btn {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.next-btn {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
