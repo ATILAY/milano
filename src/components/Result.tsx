@@ -63,4 +63,4 @@ export default function Result(props: ResultPropsType) {
         </div>
     )
 }
-////
+//// additional
